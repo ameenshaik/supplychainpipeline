@@ -2,7 +2,7 @@
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 An end-to-end cloud-based data engineering pipeline built on Microsoft Azure that processes e-commerce supply chain data through a Medallion Architecture (Bronze-Silver-Gold layers). The pipeline automates data ingestion, transformation, and analytics preparation, delivering actionable business insights through interactive dashboards.
 
@@ -15,7 +15,7 @@ An end-to-end cloud-based data engineering pipeline built on Microsoft Azure tha
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 **Source:** [DataCo Smart Supply Chain for Big Data Analysis](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
 
@@ -35,7 +35,7 @@ An end-to-end cloud-based data engineering pipeline built on Microsoft Azure tha
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ![Architecture Diagram](images/architecture-diagram.png)
 
@@ -43,7 +43,7 @@ An end-to-end cloud-based data engineering pipeline built on Microsoft Azure tha
 
 The pipeline implements a three-layer Medallion Architecture for progressive data refinement:
 
-#### 🥉 **Bronze Layer - Raw Data**
+#### **Bronze Layer - Raw Data**
 - **Purpose:** Store raw, unprocessed data exactly as received from source
 - **Storage:** Azure Data Lake Storage Gen2 (ADLS)
 - **Format:** Delta Lake
@@ -54,7 +54,7 @@ The pipeline implements a three-layer Medallion Architecture for progressive dat
   - Column names standardized (removed special characters)
   - Audit columns added (ingestion timestamp, source file, pipeline run ID)
 
-#### 🥈 **Silver Layer - Dimensional Model**
+#### **Silver Layer - Dimensional Model**
 - **Purpose:** Create clean, validated, business-ready dimensional model
 - **Storage:** Azure Data Lake Storage Gen2
 - **Format:** Delta Lake
@@ -79,7 +79,7 @@ The pipeline implements a three-layer Medallion Architecture for progressive dat
 - Deduplication applied
 - Referential integrity enforced
 
-#### 🥇 **Gold Layer - Business Analytics**
+#### **Gold Layer - Business Analytics**
 - **Purpose:** Pre-aggregated, analytics-ready business intelligence tables
 - **Storage:** Azure Data Lake Storage Gen2
 - **Format:** Delta Lake
@@ -111,7 +111,7 @@ The pipeline implements a three-layer Medallion Architecture for progressive dat
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Category | Technology | Purpose |
 |----------|------------|---------|
@@ -125,7 +125,7 @@ The pipeline implements a three-layer Medallion Architecture for progressive dat
 
 ---
 
-## 🔄 Pipeline Automation
+## Pipeline Automation
 
 ![ADF Pipeline](images/adf-pipeline-flow.png)
 
@@ -159,7 +159,7 @@ Silver Fact Table
 
 ---
 
-## 💻 Implementation
+## Implementation
 
 ![Databricks Workspace](images/databricks-workspace.png)
 
@@ -186,7 +186,7 @@ Silver Fact Table
 
 ---
 
-## 📊 Business Intelligence
+## Business Intelligence
 
 ![Power BI Dashboard](images/powerbi-sales-dashboard.png)
 
@@ -213,7 +213,7 @@ Silver Fact Table
 
 ---
 
-## 📈 Key Business Insights
+## Key Business Insights
 
 ### Overall Performance
 - **Total Revenue:** $36.78 Million
@@ -224,26 +224,26 @@ Silver Fact Table
 
 ### Critical Findings
 
-#### 🚨 Delivery Performance Issues
+#### Delivery Performance Issues
 - **Late Delivery Rate:** 54.83% (98,977 orders)
 - **On-Time Delivery:** Only 45.17%
 - **Major Issue:** First Class shipping has only 4.7% on-time rate despite being premium service
 - **Best Performer:** Standard Class with 61.9% on-time rate
 - **Recommendation:** Urgent investigation needed for First Class and Second Class shipping
 
-#### 🏆 Top Performing Products
+#### Top Performing Products
 1. **Field & Stream Gun Safe** - $6.93M (19% of total revenue)
 2. **Perfect Fitness Perfect Rip Deck** - $4.42M
 3. **Diamondback Women's Bike** - $4.12M
 
-#### ⚠️ Unprofitable Products
+#### Unprofitable Products
 - **3 products losing money:**
   - SOLE E35 Elliptical: -$965 loss
   - Bushnell Rangefinder: -$256 loss
   - SOLE E25 Elliptical: -$170 loss
 - **Recommendation:** Discontinue or reprice these products
 
-#### 🌍 Market Performance
+#### Market Performance
 1. **Europe:** $10.87M (30% of revenue)
 2. **LATAM:** $10.28M (28% of revenue)
 3. **Pacific Asia:** $8.27M (22% of revenue)
@@ -256,7 +256,7 @@ Silver Fact Table
 
 ---
 
-## 🚀 How to Run the Pipeline
+## How to Run the Pipeline
 
 ### Prerequisites
 1. Azure subscription with required permissions
@@ -329,7 +329,7 @@ Option 2: Automated schedule
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 ```
 supplychainpipeline/
 ├── README.md                          # Project documentation
@@ -365,7 +365,7 @@ supplychainpipeline/
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Architecture Overview
 ![Architecture Diagram](images/architecture-diagram.png)
@@ -385,7 +385,7 @@ supplychainpipeline/
 
 ---
 
-## 🎓 Learning Outcomes
+## Learning Outcomes
 
 Through this project, I gained hands-on experience with:
 
@@ -417,7 +417,7 @@ Through this project, I gained hands-on experience with:
 
 ---
 
-## 🔍 Data Quality & Validation
+## Data Quality & Validation
 
 ### Data Quality Checks Implemented
 - ✅ **Null validation:** Zero null values in all primary and foreign keys
@@ -437,7 +437,7 @@ Through this project, I gained hands-on experience with:
 
 ---
 
-## 💡 Business Recommendations
+## Business Recommendations
 
 Based on the data analysis, here are key actionable recommendations:
 
@@ -468,7 +468,7 @@ Based on the data analysis, here are key actionable recommendations:
 
 ---
 
-## 🔧 Technical Implementation Details
+## Technical Implementation Details
 
 ### Delta Lake Benefits
 - **ACID Transactions:** Ensures data consistency during concurrent reads/writes
@@ -490,7 +490,7 @@ Based on the data analysis, here are key actionable recommendations:
 
 ---
 
-## 📊 Data Model
+## Data Model
 
 ### Star Schema Design
 
@@ -514,7 +514,7 @@ Based on the data analysis, here are key actionable recommendations:
 
 ---
 
-## 🔐 Security & Best Practices
+## Security & Best Practices
 
 ### Security Measures
 - ✅ Access keys stored securely (not in code repository)
@@ -533,7 +533,7 @@ Based on the data analysis, here are key actionable recommendations:
 
 ---
 
-## 🎯 Challenges & Solutions
+## Challenges & Solutions
 
 ### Challenge 1: Geography Dimension Matching
 - **Issue:** 9.25% of orders had null geography_id due to null zipcodes
@@ -557,7 +557,7 @@ Based on the data analysis, here are key actionable recommendations:
 
 ---
 
-## 📚 References & Resources
+## References & Resources
 
 ### Azure Documentation
 - [Azure Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
@@ -571,7 +571,7 @@ Based on the data analysis, here are key actionable recommendations:
 
 ---
 
-## 🏆 Project Deliverables
+## Project Deliverables
 
 - ✅ Fully functional cloud data pipeline
 - ✅ Medallion architecture implementation (Bronze-Silver-Gold)
@@ -584,23 +584,22 @@ Based on the data analysis, here are key actionable recommendations:
 
 ---
 
-## 📧 Contact
+## Contact
 
 **Ameen Shaik**  
-Email: shaik.amee@northeastern.edu  
-NUID: 002534243  
+Email: shaik.amee@northeastern.edu 
 GitHub: [@ameenshaik](https://github.com/ameenshaik)  
 LinkedIn: [Connect with me](www.linkedin.com/in/ameen-shaik-945681183)
 
 ---
 
-## 📄 License
+## License
 
 This project is submitted for academic evaluation as part of DS 5110 coursework at Northeastern University, Fall 2025.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Course:** DS 5110 - Introduction to Data Management and Processing
 - **Institution:** Northeastern University
