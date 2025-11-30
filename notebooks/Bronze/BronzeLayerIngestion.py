@@ -108,7 +108,7 @@ for col in df_verify.columns[:10]:
     print(f"   - {col}")
 
 # Show sample with metadata
-print("\n👀 Sample data:")
+print("\n Sample data:")
 display(df_verify.select(
     "order_id",
     "order_status",
