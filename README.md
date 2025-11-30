@@ -1,11 +1,5 @@
 # Supply Chain Data Engineering Pipeline
 
-**Course:** DS 5110 - Introduction to Data Management and Processing  
-**Student:** Ameen Shaik  
-**NUID:** 002534243  
-**Institution:** Northeastern University  
-**Semester:** Fall 2025
-
 ---
 
 ## 🎯 Project Overview
@@ -596,13 +590,13 @@ Based on the data analysis, here are key actionable recommendations:
 Email: shaik.amee@northeastern.edu  
 NUID: 002534243  
 GitHub: [@ameenshaik](https://github.com/ameenshaik)  
-LinkedIn: [Connect with me](https://linkedin.com/in/ameenshaik)
+LinkedIn: [Connect with me](www.linkedin.com/in/ameen-shaik-945681183)
 
 ---
 
 ## 📄 License
 
-This project is submitted for academic evaluation as part of DS 5110 coursework at Northeastern University, Fall 2024.
+This project is submitted for academic evaluation as part of DS 5110 coursework at Northeastern University, Fall 2025.
 
 ---
 
@@ -611,8 +605,3 @@ This project is submitted for academic evaluation as part of DS 5110 coursework 
 - **Course:** DS 5110 - Introduction to Data Management and Processing
 - **Institution:** Northeastern University
 - **Dataset:** DataCo Global Supply Chain Dataset (Kaggle)
-- **Reference:** E-Commerce Data Pipeline by rithujaa
-
----
-
-**Last Updated:** November 30, 2024
