@@ -545,12 +545,7 @@ Based on the data analysis, here are key actionable recommendations:
 - **Solution:** Created cleaning function to standardize column names
 - **Learning:** Different storage formats have different constraints
 
-### Challenge 3: Power BI on Mac Limitations
-- **Issue:** Power BI Desktop not available for macOS
-- **Solution:** Used Power BI Service (web) with exported Parquet files
-- **Learning:** Platform considerations important in tool selection
-
-### Challenge 4: ADF Databricks Authentication
+### Challenge 3: ADF Databricks Authentication
 - **Issue:** Connection setup required proper cluster configuration
 - **Solution:** Used existing interactive cluster with access token authentication
 - **Learning:** Cloud service integration requires careful configuration
