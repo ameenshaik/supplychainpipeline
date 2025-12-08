@@ -199,15 +199,9 @@ Silver Fact Table
    - Category and market analysis
    - Top product performance
 
-2. **Delivery Performance Dashboard** (optional)
-   - On-time delivery rates
-   - Shipping mode efficiency
-   - Geographic delivery analysis
-
-3. **Customer & Product Insights** (optional)
-   - Customer segmentation
-   - Product profitability matrix
-   - Top customers and products
+2. **Product Performance Dashboard**
+   - Product profitability
+   - Top products by Sales
 
 **Connection:** Direct connection to Gold layer via Azure Data Lake Storage Gen2
 
@@ -224,13 +218,6 @@ Silver Fact Table
 
 ### Critical Findings
 
-#### Delivery Performance Issues
-- **Late Delivery Rate:** 54.83% (98,977 orders)
-- **On-Time Delivery:** Only 45.17%
-- **Major Issue:** First Class shipping has only 4.7% on-time rate despite being premium service
-- **Best Performer:** Standard Class with 61.9% on-time rate
-- **Recommendation:** Urgent investigation needed for First Class and Second Class shipping
-
 #### Top Performing Products
 1. **Field & Stream Gun Safe** - $6.93M (19% of total revenue)
 2. **Perfect Fitness Perfect Rip Deck** - $4.42M
@@ -242,17 +229,6 @@ Silver Fact Table
   - Bushnell Rangefinder: -$256 loss
   - SOLE E25 Elliptical: -$170 loss
 - **Recommendation:** Discontinue or reprice these products
-
-#### Market Performance
-1. **Europe:** $10.87M (30% of revenue)
-2. **LATAM:** $10.28M (28% of revenue)
-3. **Pacific Asia:** $8.27M (22% of revenue)
-
-#### 👥 Customer Insights
-- **Repeat Customers:** 57% of customer base generates 92% of revenue
-- **Average Customer Lifetime Value:** $1,781
-- **Top Customer Segment:** Potential Loyalists (5,252 customers, $12.9M total CLV)
-- **Customer Concentration:** 62% from USA, 38% from Puerto Rico
 
 ---
 
@@ -359,6 +335,7 @@ supplychainpipeline/
 │   ├── adf-pipeline-flow.png
 │   ├── databricks-workspace.png
 │   └── powerbi-sales-dashboard.png
+│   └── powerbi-product-dashboard.png
 └── reports/
     └── Iteration-4.pdf
 ```
@@ -411,9 +388,7 @@ Through this project, I gained hands-on experience with:
 ### Business Intelligence
 - ✅ Translating business questions into data models
 - ✅ Creating meaningful KPIs and metrics
-- ✅ RFM analysis for customer segmentation
 - ✅ Profitability analysis and margin calculations
-- ✅ Operational metrics (delivery performance)
 
 ---
 
@@ -596,6 +571,6 @@ This project is submitted for academic evaluation as part of DS 5110 coursework 
 
 ## Acknowledgments
 
-- **Course:** DS 5110 - Introduction to Data Management and Processing
+- **Course:** DS 5110 - Essentials of Data Science
 - **Institution:** Northeastern University
 - **Dataset:** DataCo Global Supply Chain Dataset (Kaggle)
